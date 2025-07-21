@@ -9,7 +9,6 @@ df = pd.read_csv('IntroToPy/mountains_db.tsv', sep='\t', header=None, names = ['
 num_rows = len(df['Code'].unique())
 print(num_rows)
 non_null_count = df['Elevation'].isnull().sum()
-minh=999999
 print(non_null_count)
 print(df['Elevation'].max())
 print(df['Elevation'].dropna().min())
