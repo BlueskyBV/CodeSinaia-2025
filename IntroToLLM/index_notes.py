@@ -18,5 +18,5 @@ def load_notes(path):
     return "\n".join(texts)
 
 if __name__ == "__main__":
-    notes = load_notes("D:/Git.Hub/FlorinTeo/CodeSinaia-2025.src/_Notes/0. Vineri - Setup")
+    notes = load_notes("./_Notes/0. Vineri - Setup")
     print(notes)

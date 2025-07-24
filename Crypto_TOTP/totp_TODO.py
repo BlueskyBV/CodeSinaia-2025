@@ -24,8 +24,8 @@ def gen_qr(user_id):
 
     secret = base64.b32encode(generate_shared_secret()).decode('utf-8')     # generate secret key
     
-    # TODO: combine code# and user id to create URI (hint: match example URI format given above)
-    uri = None
+    # Combine code# and user id to create URI (match example URI format given above)
+    uri = f"{code1}{user_id}{code2}{secret}{code3}"
     print(" >> URI generated: ", uri)
 
     # TODO: store secret into a file named "secret.txt"
